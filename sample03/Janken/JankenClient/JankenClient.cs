@@ -11,6 +11,10 @@ namespace JankenClient
     {
         public static void Main()
         {
+            Console.WriteLine("==プレイヤー名を入力してください==");
+            string playerName = Console.ReadLine();
+            Console.WriteLine($"プレイヤー名：{playerName}");
+
             Console.WriteLine("=== じゃんけんクライアント ===");
             Console.WriteLine("じゃんけんの手を選んでください:");
             Console.WriteLine("0: グー");
@@ -38,7 +42,7 @@ namespace JankenClient
 
             Console.WriteLine($"あなたの手: {Janken.GetHandName(selectedHand.Value)}");
 
-            SocketClient(input);
+            SocketClient($"{playerName}|{input}");
             Console.ReadKey();
         }
 

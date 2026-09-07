@@ -84,7 +84,7 @@ public class Janken
         {
             Result.Win => "勝ち",
             Result.Lose => "負け",
-            Result.Draw => "引き分け",
+            Result.Draw => "あいこ",
             _ => "不明"
         };
     }

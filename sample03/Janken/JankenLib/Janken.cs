@@ -1,5 +1,6 @@
 ﻿namespace JankenLib;
 
+
 /// <summary>
 /// じゃんけんの手の種類
 /// </summary>
@@ -82,9 +83,9 @@ public class Janken
     {
         return result switch
         {
-            Result.Win => "勝ち",
-            Result.Lose => "負け",
-            Result.Draw => "引き分け",
+            Result.Win => $"勝ち",
+            Result.Lose => $"負け",
+            Result.Draw => "あいこ",
             _ => "不明"
         };
     }
